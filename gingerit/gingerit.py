@@ -34,7 +34,7 @@ class GingerIt(object):
 
         for suggestion in data['Corrections']:
             start = suggestion["From"]
-            end = suggestion["To"]
+            end = suggestion["To"] + 1
 
             if i <= end:
                 suggest = suggestion['Suggestions'][0]
